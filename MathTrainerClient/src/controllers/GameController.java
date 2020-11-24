@@ -52,7 +52,8 @@ public class GameController extends SceneControllerParent implements InitializeS
     private int numb6 = (int) (10 * Math.random()) + 1;
     private int numb8 = (int) (10 * Math.random()) + 1;
     private int numb7 = (int) (numb8 * Math.random()) + 1;
-    private int sum, sum1, sum2, sum3;
+    private int sum, sum1, sum2;
+    private double sum3;
 
     private static final Integer STARTTIME = 60;
     private Timeline timeline = new Timeline();
@@ -152,11 +153,18 @@ public class GameController extends SceneControllerParent implements InitializeS
         sum = numb1 + numb2;
         sum1 = numb3 - numb4;
         sum2 = numb5 * numb6;
-        sum3 = numb7 / numb8;
+        sum3 = numb7 / (double) numb8;
+        
+        // Fetch answers
         int answer = Integer.parseInt(sumPlus.getText());
         int answer1 = Integer.parseInt(sumMinus.getText());
         int answer2 = Integer.parseInt(sumMulti.getText());
-        int answer3 = Integer.parseInt(sumDiv.getText());
+        double answer3 = Double.parseDouble(sumDiv.getText());
+        
+        // Round division answers to two decimals
+        sum3 = Math.round(sum3 * 100.0) / 100.0;
+        answer3 = Math.round(answer3 * 100.0) / 100.0;
+        
         int correctAnswer = 0;
         if (answer == sum) {
             correctAnswer++;
@@ -183,7 +191,7 @@ public class GameController extends SceneControllerParent implements InitializeS
             sumMulti.setStyle("-fx-background-color: PALEVIOLETRED;");
 
         }
-        if (answer3 == sum3){
+        if (Double.compare(answer3, sum3) == 0){ // Cannot directly compare two doubles.
             sumDiv.setStyle("-fx-background-color: LIGHTGREEN;");
             correctAnswer++;
 
