@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="927.0" stylesheets="@../../entity/MathTrainerStylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ShowResultsController">
+   <children>
+      <SplitPane prefHeight="577.0" prefWidth="927.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="473.0" prefWidth="646.0" styleClass="Anchor" stylesheets="@../../entity/MathTrainerStylesheet.css">
+               <children>
+                  <AnchorPane layoutY="201.0" prefHeight="360.0" prefWidth="927.0" styleClass="MenuButton" stylesheets="@../../entity/MathTrainerStylesheet.css">
+                     <children>
+                        <TableView fx:id="tableView" layoutX="128.0" layoutY="-77.0" prefHeight="353.0" prefWidth="650.0">
+                          <columns>
+                            <TableColumn fx:id="questionColumn" prefWidth="449.0" text="Fråga" />
+                             <TableColumn fx:id="answerColumn" prefWidth="90.0" text="Rätt svar" />
+                             <TableColumn fx:id="yourAnswerColumn" prefWidth="90.0" text="Ditt svar" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+                  <Button layoutX="125.0" layoutY="24.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="650.0" styleClass="MenuButton" stylesheets="@../../entity/MathTrainerStylesheet.css" />
+                  <Label layoutX="398.0" layoutY="24.0" prefHeight="89.0" prefWidth="130.0" styleClass="labelBlack" text="Svar">
+                     <font>
+                        <Font size="61.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="510.0" layoutY="492.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="25.0" prefWidth="182.0" styleClass="ConfirmButton" text="Klar" />
+                  <Region layoutY="97.0" prefHeight="253.0" prefWidth="77.0" />
+                  <ImageView fx:id="imageTrophy" fitHeight="148.0" fitWidth="173.0" layoutX="556.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../images/diamondtrophy-cartoon-award-drawing-prize-animation-medal-cdr-blue-png-clipart.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="251.0" layoutY="492.0" mnemonicParsing="false" onAction="#backToScore" prefHeight="25.0" prefWidth="182.0" styleClass="buttonReal" text="Tillbaka" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</VBox>

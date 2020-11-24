@@ -1,0 +1,115 @@
+En triangel har sidlängderna 4 cm, 10 cm och 14 cm. Hur stor omkrets har denna triangel?
+28
+23
+27
+34
+En triangel har sidlängderna 7 cm, 41 mm och 62 mm. Observera enheterna. Hur stor omkrets har denna triangel i centimeter?
+17.3
+25
+15
+2
+Hur många hörn har en kub?
+8
+6
+4
+6
+Hur många hörn har ett Parallellogram?
+4
+5
+8
+7
+Hur många hörn har en cirkel?
+0
+4
+5
+2
+Den geometrisk figuren cylinder, vad liknar den i verkligheten?";
+Läskburk
+Fotboll
+Dator
+Bil
+Den geometrisk figuren rektangel, vad liknar den i verkligheten?
+Pappersark
+Tärning
+Kartong
+Tåg
+Den geometrisk figuren cirkel, vad liknar den i verkligheten?
+CD-skiva
+Datorskärm
+CD-fodral
+Kruka
+En triangel är 7 cm bred och har höjden 10,6 cm. Hur stor area har denna triangel? Du behöver inte skriva ut kvadratcentimeter
+37,1
+38
+39
+26
+En rektangel har sidlängderna 4 cm respektive 8 cm. Hur stor area har denna rektangel?
+32
+34
+35
+31
+En rektangel har sidlängderna 5 cm respektive 9 cm. Hur stor area och omkrets har denna rektangel?
+Area: 45 Omkrets: 28
+Area: 44 Omkrets: 27
+Area: 45 Omkrets: 26
+Area: 44 Omkrets: 28
+På en karta representeras 1 meter i verkligheten av 1 millimeter på kartan. Ange vilken skala som står angiven på kartan.
+1:1000
+2:1000
+1:10000
+1:100
+Max har tre olika kartor över Stockholm. Klicka på den som har förminskat verkligheten mest.
+Skala 1:10000
+Skala 1:1000
+Skala 1:2000
+Skala 1:3000
+På samma sätt som skalan 1:10 betyder att föremål blir 10 gånger mindre på papperet betyder 10:1 att föremål blir 10 gånger större på papperet.
+Skriv rätt skala på en ritning där en skruv som i verkligheten är 7 mm avbildas med längden 9,1 cm.
+13:1
+14:1
+12:1
+11:1
+På samma sätt som skalan 1:10 betyder att föremål blir 10 gånger mindre på papperet betyder 10:1 att föremål blir 10 gånger större på papperet.
+Skriv rätt skala på en ritning där en skruv som i verkligheten är 7 mm avbildas med längden 6,3 cm.
+9:1
+9:2
+9:3
+9:4
+På samma sätt som skalan 1:10 betyder att föremål blir 10 gånger mindre på papperet betyder 10:1 att föremål blir 10 gånger större på papperet.
+Skriv rätt skala på en ritning där en skruv som i verkligheten är 7 mm avbildas med längden 7,7 cm.
+11:1
+11:2
+11:3
+11:4
+Den punkt linjerna möts i, där vi mäter vinkeln, kallas...
+Vinkelspets
+Vinkelpunkt
+Vinkelhake
+Mötesplats
+Klicka på det påstående som är sant.
+En kub och ett rätblock har alltid lika många hörn
+En cirkel är alltid större än en kvadrat
+En triangel har alltid hälften så många hörn som en pyramid
+En kvadrat har två hörn mer än en triangel
+Hur många hörn har en triangel?
+3
+4
+5
+6
+Hur många hörn har en romb?
+4
+5
+6
+8
+
+
+
+
+
+
+
+
+
+
+
+
