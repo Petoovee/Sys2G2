@@ -12,7 +12,7 @@ public class Questions implements Serializable {
     private boolean correctAnswer;
     private String question;
     private String answer;
-    private String [] wrongAnswers;
+    private String [] wrongAnswers  = new String[3];
     private String userAnswer;
     //private Course course;
     //Constructor
@@ -22,7 +22,6 @@ public class Questions implements Serializable {
     public Questions(String question, String answer, String wrongAnswer1, String wrongAnswer2, String wrongAnswer3) {
         this.question = question;
         this.answer = answer;
-        wrongAnswers = new String[3];
         wrongAnswers[0] = wrongAnswer1;
         wrongAnswers[1] = wrongAnswer2;
         wrongAnswers[2] = wrongAnswer3;
