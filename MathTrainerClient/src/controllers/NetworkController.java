@@ -108,12 +108,12 @@ public class NetworkController {
                 objectOutputStream = new ObjectOutputStream(socket.getOutputStream());
                 objectInputStream = new ObjectInputStream(socket.getInputStream());
                 objectOutputStream.writeUTF(request);
-                System.out.println("Sent " + request);
+                System.out.println("Sent: " + request);
                 objectOutputStream.writeObject(object);
-                System.out.println("Sent " + object);
+                System.out.println("Sent: " + object);
                 objectOutputStream.flush();
                 returnValue = objectInputStream.readObject();
-                System.out.println(returnValue);
+                System.out.println("Recieved: " +returnValue);
                 objectOutputStream.close();
                 objectInputStream.close();
 
@@ -122,7 +122,6 @@ public class NetworkController {
                 System.out.println("Error in network communcation");
                 e.printStackTrace();
             }
-            System.out.println("Received " + returnValue);
         return returnValue;
         }
     }

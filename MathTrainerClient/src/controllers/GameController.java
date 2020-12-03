@@ -44,14 +44,14 @@ public class GameController extends SceneControllerParent implements InitializeS
     public TextField sumMulti;
     public TextField sumDiv;
 
-    private int numb1 = (int) (40 * Math.random()) + 1;
-    private int numb2 = (int) (40 * Math.random()) + 1;
-    private int numb3 = (int) (40 * Math.random()) + 1;
-    private int numb4 = (int) (40 * Math.random()) + 1;
-    private int numb5 = (int) (10 * Math.random()) + 1;
-    private int numb6 = (int) (10 * Math.random()) + 1;
-    private int numb8 = (int) (10 * Math.random()) + 1;
-    private int numb7 = (int) (numb8 * Math.random()) + 1;
+    private int numb1;
+    private int numb2;
+    private int numb3;
+    private int numb4;
+    private int numb5;
+    private int numb6;
+    private int numb8;
+    private int numb7;
     private int sum, sum1, sum2;
     private double sum3;
 
@@ -85,6 +85,17 @@ public class GameController extends SceneControllerParent implements InitializeS
      * This method starts the game, and adds all the random values and starts the timer.
      */
     public void startQuiz() {
+    	
+    	// Generate new quiz
+        numb1 = (int) (40 * Math.random()) + 1;
+        numb2 = (int) (40 * Math.random()) + 1;
+        numb3 = (int) (40 * Math.random()) + 1;
+        numb4 = (int) (40 * Math.random()) + 1;
+        numb5 = (int) (10 * Math.random()) + 1;
+        numb6 = (int) (10 * Math.random()) + 1;
+        numb8 = (int) (10 * Math.random()) + 1;
+        numb7 = (int) (numb8 * Math.random()) + 1;
+        
         plusLeftLabel.setText(String.valueOf(numb1));
         plusRightLabel.setText(String.valueOf(numb2));
         minusLeftLabel.setText(String.valueOf(numb3));
@@ -93,8 +104,22 @@ public class GameController extends SceneControllerParent implements InitializeS
         additionRightLabel.setText(String.valueOf(numb6));
         devidedLeftLabel.setText(String.valueOf(numb7));
         devidedRightLabel.setText(String.valueOf(numb8));
-
+        
+        // Reset user input
+        sumPlus.setText("");
+        sumMinus.setText("");
+        sumMulti.setText("");
+        sumDiv.setText("");
+        
+        // Reset field colors
+        sumPlus.setStyle("-fx-background-color: WHITE;");
+        sumMinus.setStyle("-fx-background-color: WHITE;");
+        sumMulti.setStyle("-fx-background-color: WHITE;");
+        sumDiv.setStyle("-fx-background-color: WHITE;");
+        
+        // Re-enable answerBtn
         startQuiz.setDisable(true);
+        answerBtn.setDisable(false);
         timer();
 
 
@@ -148,7 +173,15 @@ public class GameController extends SceneControllerParent implements InitializeS
     /**
      *check if answer is correct
      */
-
+    
+    private void answerColor(TextField field, boolean isCorrect) {
+        if (isCorrect) {
+            field.setStyle("-fx-background-color: LIGHTGREEN;");
+        } else {
+            field.setStyle("-fx-background-color: PALEVIOLETRED;");
+        }
+    }
+    
     public void CheckAnswer() {
         sum = numb1 + numb2;
         sum1 = numb3 - numb4;
@@ -165,40 +198,11 @@ public class GameController extends SceneControllerParent implements InitializeS
         sum3 = Math.round(sum3 * 100.0) / 100.0;
         answer3 = Math.round(answer3 * 100.0) / 100.0;
         
-        int correctAnswer = 0;
-        if (answer == sum) {
-            correctAnswer++;
-            //sumPlus.setStyle("-fx-control-inner-background: #b2ff59");
-            sumPlus.setStyle("-fx-background-color: LIGHTGREEN;");
-        } else {
-            sumPlus.setStyle("-fx-background-color: PALEVIOLETRED;");
-
-        }
-        if (answer1 == sum1){
-            sumMinus.setStyle("-fx-background-color: LIGHTGREEN;");
-            correctAnswer++;
-        }
-        else{
-            sumMinus.setStyle("-fx-background-color: PALEVIOLETRED;");
-
-        }
-        if (answer2 == sum2){
-            sumMulti.setStyle("-fx-background-color: LIGHTGREEN;");
-            correctAnswer++;
-
-        }
-        else{
-            sumMulti.setStyle("-fx-background-color: PALEVIOLETRED;");
-
-        }
-        if (Double.compare(answer3, sum3) == 0){ // Cannot directly compare two doubles.
-            sumDiv.setStyle("-fx-background-color: LIGHTGREEN;");
-            correctAnswer++;
-
-        }
-        else{
-            sumDiv.setStyle("-fx-background-color: PALEVIOLETRED;");
-        }
+        answerColor(sumPlus, (answer == sum));
+        answerColor(sumMinus, (answer1 == sum1));
+        answerColor(sumMulti, (answer2 == sum2));
+        answerColor(sumDiv, (Double.compare(answer3, sum3) == 0)); // Cannot directly compare two doubles.
+        
         timeline.stop();
         answerBtn.setDisable(true);
         startQuiz.setDisable(false);

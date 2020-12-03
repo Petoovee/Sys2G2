@@ -156,7 +156,7 @@ public class QuizController extends SceneControllerParent implements InitializeS
      */
     public void quitQuiz(ActionEvent actionEvent){
 
-      boolean answer =  mainController.popUpWindow(Alert.AlertType.CONFIRMATION, "Avsluta?" , "Ã„r du sÃ¤ker pÃ¥ att du vill avsluta, dina svar sparas inte" );
+      boolean answer =  mainController.popUpWindow(Alert.AlertType.CONFIRMATION, "Avsluta?" , "Är du säker på att du vill avsluta, dina svar sparas inte" );
       if (answer){
           mainController.setScene(ScenesEnum.Home);
       }
