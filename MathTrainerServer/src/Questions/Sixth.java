@@ -40,7 +40,7 @@ public class Sixth extends Course {
         //four counting ways
         initFourCountQuestions();
 
-        //slumpade fr√•gor
+        //slumpade frÂgor
         initRandomlyQuestion();
     }
 
@@ -66,18 +66,18 @@ public class Sixth extends Course {
     }
     // creating statistic questions
     private void initStatisticQuestions(){
-        String q1 = "Fem t√§rningar kastas och de visar sidorna: 5, 1, 1, 3, 5. Vad √§r medelv√§rdet.";
-        String q2 = "Erika spelar fotboll. Under de senaste tre matcherna har hon gjort i genomsnitt 3 m√•l per match. " +
-                "Ber√§kna medelv√§rdet f√∂r alla m√•l under de senaste tre matcherna.";
-        String q3 = "Medelv√§rdet av tre tal √§r 5. Tv√• av talen √§r 4 och 5. Vilket √§r det tredje talet?";
-        String q4 = "Skriv vad 1/4 √§r i procent.";
-        String q5 = "V√§lj r√§tt namn till vad som f√∂rklaras i tabeller. Information fr√•n topp till botten";
-        String q6 = "V√§lj r√§tt namn till vad som f√∂rklaras i tabeller. Information fr√•n v√§nster till h√∂ger";
-        String q7 = "Erika spelar fotboll. Under de senaste tre matcherna har hon gjort i genomsnitt 2 m√•l per match. " +
-                "Ber√§kna summan f√∂r alla m√•l under de senaste tre matcherna";
-        String q8 = "Medelv√§rdet av tre tal √§r 10. Tv√• av talen √§r 8 och 10. Vilket √§r det tredje talet?";
-        String q9 = "Fem t√§rningar kastas och de visar sidorna: 6, 0, 4, 3, 2. Ber√§kna medelv√§rdet.";
-        String q10 = "Medelv√§rdet av tre tal √§r 5. Tv√• av talen √§r 2 och 5. Vilket √§r det tredje talet?";
+        String q1 = "Fem t‰rningar kastas och de visar sidorna: 5, 1, 1, 3, 5. Vad ‰r medelv‰rdet.";
+        String q2 = "Erika spelar fotboll. Under de senaste tre matcherna har hon gjort i genomsnitt 3 mÂl per match. " +
+                "Ber‰kna medelv‰rdet fˆr alla mÂl under de senaste tre matcherna.";
+        String q3 = "Medelv‰rdet av tre tal ‰r 5. TvÂ av talen ‰r 4 och 5. Vilket ‰r det tredje talet?";
+        String q4 = "Skriv vad 1/4 ‰r i procent.";
+        String q5 = "V‰lj r‰tt namn till vad som fˆrklaras i tabeller. Information frÂn topp till botten";
+        String q6 = "V‰lj r‰tt namn till vad som fˆrklaras i tabeller. Information frÂn v‰nster till hˆger";
+        String q7 = "Erika spelar fotboll. Under de senaste tre matcherna har hon gjort i genomsnitt 2 mÂl per match. " +
+                "Ber‰kna summan fˆr alla mÂl under de senaste tre matcherna";
+        String q8 = "Medelv‰rdet av tre tal ‰r 10. TvÂ av talen ‰r 8 och 10. Vilket ‰r det tredje talet?";
+        String q9 = "Fem t‰rningar kastas och de visar sidorna: 6, 0, 4, 3, 2. Ber‰kna medelv‰rdet.";
+        String q10 = "Medelv‰rdet av tre tal ‰r 5. TvÂ av talen ‰r 2 och 5. Vilket ‰r det tredje talet?";
 
         statisticQuestions = new Questions[]{
                 new Questions(q1, "3", "1", "15", "30"),
@@ -93,41 +93,41 @@ public class Sixth extends Course {
     }
     // creating geometry questions
     private void initGeometryQuestions() {
-        String q1 = "Fem t√§rningar kastas och de visar sidorna: 4, 2, 3, 3, 3. Ber√§kna medelv√§rdet.";
-        String q2 = "En triangel har sidl√§ngderna 4 cm, 10 cm och 14 cm. Hur stor omkrets har denna triangel?";
-        String q3 = "En triangel har sidl√§ngderna 7 cm, 41 mm och 62 mm. Observera enheterna."
+        String q1 = "Fem t‰rningar kastas och de visar sidorna: 4, 2, 3, 3, 3. Ber‰kna medelv‰rdet.";
+        String q2 = "En triangel har sidl‰ngderna 4 cm, 10 cm och 14 cm. Hur stor omkrets har denna triangel?";
+        String q3 = "En triangel har sidl‰ngderna 7 cm, 41 mm och 62 mm. Observera enheterna."
                 + n + " Hur stor omkrets har denna triangel i centimeter?";
-        String q4 = " Hur m√•nga h√∂rn har en kub?";
-        String q5 = "Hur m√•nga h√∂rn har ett Parallellogram";
-        String q6 = "Hur m√•nga h√∂rn har en cirkel";
+        String q4 = " Hur mÂnga hˆrn har en kub?";
+        String q5 = "Hur mÂnga hˆrn har ett Parallellogram";
+        String q6 = "Hur mÂnga hˆrn har en cirkel";
         String q7 = "Den geometrisk figuren cylinder, vad liknar den i verkligheten?";
         String q8 = "Den geometrisk figuren rektangel, vad liknar den i verkligheten?";
         String q9 = "Den geometrisk figuren cirkel, vad liknar den i verkligheten?";
-        String q10 = "Den punkt linjerna m√∂ts i, d√§r vi m√§ter vinkeln, kallas...";
+        String q10 = "Den punkt linjerna mˆts i, d‰r vi m‰ter vinkeln, kallas...";
         geometryQuestions = new Questions[]{
                 new Questions(q2, "28", "23", "27", "34"),
                 new Questions(q3, "17.3", "25", "15", "2"),
                 new Questions(q4, "8", "6", "4", "6"),
                 new Questions(q5, "4", "5", "8", "7"),
                 new Questions(q6, "0", "4", "5", "2"),
-                new Questions(q7, "L√§skburk", "Fotboll", "Dator", "Bil"),
-                new Questions(q8, "Pappersark", "T√§rning", "Kartong", "T√•g"),
-                new Questions(q9, "CD-skiva", "Datorsk√§rm", "CD-fodral", "Kruka"),
+                new Questions(q7, "L‰skburk", "Fotboll", "Dator", "Bil"),
+                new Questions(q8, "Pappersark", "T‰rning", "Kartong", "TÂg"),
+                new Questions(q9, "CD-skiva", "Datorsk‰rm", "CD-fodral", "Kruka"),
                 new Questions(q1, "3", "4", "7,5", "8"),
-                new Questions(q10, "Vinkelspets", "M√∂tesplats", "Vikelhake", "Vinkelpunkt")};
+                new Questions(q10, "Vinkelspets", "Mˆtesplats", "Vikelhake", "Vinkelpunkt")};
     }
     // creating four count questions
     private void initFourCountQuestions() {
-        String q1 = "R√§kna ut 455,77+131,5";
-        String q2 = "R√§kna ut 36,55+94,20 med √∂verslagsr√§kning, avrunda till n√§rmaste tiotal.";
-        String q3 = "R√§kna ut 25,5*2";
-        String q4 = "R√§kna ut 500‚ãÖ8";
-        String q5 = "R√§kna ut 24 - 36";
-        String q6 = "R√§kna ut divisionen d√§r talet 35 √§r t√§ljaren, talet 7 √§r n√§mnaren";
-        String q7 = "R√§kna ut divisionen d√§r talet 7 √§r t√§ljaren, talet 35 √§r n√§mnaren";
-        String q8 = "Mikaels favorittr√∂ja brukade kosta 150 kr. P√• rea blev den 20% billigare, d√• k√∂pte han den. Hur mycket kostade den d√•?";
-        String q9 = "R√§kna ut  20 % av 150 kr";
-        String q10 = "Vad blir 4 . 5 . 3?";
+        String q1 = "R‰kna ut 455,77+131,5";
+        String q2 = "R‰kna ut 36,55+94,20 med ˆverslagsr‰kning, avrunda till n‰rmaste tiotal.";
+        String q3 = "R‰kna ut 25,5*2";
+        String q4 = "R‰kna ut 500*8";
+        String q5 = "R‰kna ut 24-36";
+        String q6 = "R‰kna ut divisionen d‰r talet 35 ‰r t‰ljaren, talet 7 ‰r n‰mnaren";
+        String q7 = "R‰kna ut divisionen d‰r talet 7 ‰r t‰ljaren, talet 35 ‰r n‰mnaren";
+        String q8 = "Mikaels favorittrˆja brukade kosta 150 kr. PÂ rea blev den 20% billigare, dÂ kˆpte han den. Hur mycket kostade den dÂ?";
+        String q9 = "R‰kna ut  20 % av 150 kr";
+        String q10 = "Vad blir 4*5*3?";
         fourCountQuestions = new Questions[]{new Questions(q1, "587.27", "550", "480", "245"),
                 new Questions(q2, "130", "140", "230", "312"),
                 new Questions(q3, "51", "23", "25.52", "40"),
@@ -142,18 +142,18 @@ public class Sixth extends Course {
     }
     // creating randomly questions from all three categories
     private void initRandomlyQuestion(){
-        String q1 = "Fem t√§rningar kastas och de visar sidorna: 5, 1, 1, 3, 5. Vad √§r medelv√§rdet.";
-        String q2 = "Erika spelar fotboll. Under de senaste tre matcherna har hon gjort i genomsnitt 3 m√•l per match. " +
-                "Ber√§kna medelv√§rdet f√∂r alla m√•l under de senaste tre matcherna.";
-        String q3 = "Medelv√§rdet av tre tal √§r 5. Tv√• av talen √§r 4 och 5. Vilket √§r det tredje talet?";
-        String q4 = "Fem t√§rningar kastas och de visar sidorna: 4, 2, 3, 3, 3. Ber√§kna medelv√§rdet.";
-        String q5 = "En triangel har sidl√§ngderna 4 cm, 10 cm och 14 cm. Hur stor omkrets har denna triangel?";
-        String q6 = "En triangel har sidl√§ngderna 7 cm, 41 mm och 62 mm. Observera enheterna."
+        String q1 = "Fem t‰rningar kastas och de visar sidorna: 5, 1, 1, 3, 5. Vad ‰r medelv‰rdet.";
+        String q2 = "Erika spelar fotboll. Under de senaste tre matcherna har hon gjort i genomsnitt 3 mÂl per match. " +
+                "Ber‰kna medelv‰rdet fˆr alla mÂl under de senaste tre matcherna.";
+        String q3 = "Medelv‰rdet av tre tal ‰r 5. TvÂ av talen ‰r 4 och 5. Vilket ‰r det tredje talet?";
+        String q4 = "Fem t‰rningar kastas och de visar sidorna: 4, 2, 3, 3, 3. Ber‰kna medelv‰rdet.";
+        String q5 = "En triangel har sidl‰ngderna 4 cm, 10 cm och 14 cm. Hur stor omkrets har denna triangel?";
+        String q6 = "En triangel har sidl‰ngderna 7 cm, 41 mm och 62 mm. Observera enheterna."
                 + n + " Hur stor omkrets har denna triangel i centimeter?";
-        String q7 = "R√§kna ut divisionen d√§r talet 35 √§r t√§ljaren, talet 7 √§r n√§mnaren";
-        String q8 = "R√§kna ut divisionen d√§r talet 7 √§r t√§ljaren, talet 35 √§r n√§mnaren";
-        String q9 = "Mikaels favorittr√∂ja brukade kosta 150 kr. P√• rea blev den 20% billigare, d√• k√∂pte han den. Hur mycket kostade den d√•?";
-        String q10 = "R√§kna ut  20 % av 150 kr";
+        String q7 = "R‰kna ut divisionen d‰r talet 35 ‰r t‰ljaren, talet 7 ‰r n‰mnaren";
+        String q8 = "R‰kna ut divisionen d‰r talet 7 ‰r t‰ljaren, talet 35 ‰r n‰mnaren";
+        String q9 = "Mikaels favorittrˆja brukade kosta 150 kr. PÂ rea blev den 20% billigare, dÂ kˆpte han den. Hur mycket kostade den dÂ?";
+        String q10 = "R‰kna ut  20 % av 150 kr";
 
        randomlyQuestions = new Questions[]{
                 new Questions(q1, "3", "1", "15", "30"),

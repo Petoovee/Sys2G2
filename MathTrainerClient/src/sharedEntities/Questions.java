@@ -22,6 +22,7 @@ public class Questions implements Serializable {
     public Questions(String question, String answer, String wrongAnswer1, String wrongAnswer2, String wrongAnswer3) {
         this.question = question;
         this.answer = answer;
+        wrongAnswers = new String[3];
         wrongAnswers[0] = wrongAnswer1;
         wrongAnswers[1] = wrongAnswer2;
         wrongAnswers[2] = wrongAnswer3;
