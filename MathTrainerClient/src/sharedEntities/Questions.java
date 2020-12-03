@@ -4,76 +4,78 @@ import java.io.Serializable;
 
 /**
  * The Questions class will store all the questions
+ * 
  * @author abdulsamisahil
  * @version 1.0
  * @since 2020-03-25
  */
 public class Questions implements Serializable {
-    private boolean correctAnswer;
-    private String question;
-    private String answer;
-    private String [] wrongAnswers  = new String[3];
-    private String userAnswer;
-    //private Course course;
-    //Constructor
-    //addQuestions method
-    //removeQuestions method
+	private boolean correctAnswer;
+	private String question;
+	private String answer;
+	private String[] wrongAnswers = new String[3];
+	private String userAnswer;
+	// private Course course;
+	// Constructor
+	// addQuestions method
+	// removeQuestions method
 
-    public Questions(String question, String answer, String wrongAnswer1, String wrongAnswer2, String wrongAnswer3) {
-        this.question = question;
-        this.answer = answer;
-        wrongAnswers[0] = wrongAnswer1;
-        wrongAnswers[1] = wrongAnswer2;
-        wrongAnswers[2] = wrongAnswer3;
-    }
+	public Questions(String question, String answer, String wrongAnswer1, String wrongAnswer2, String wrongAnswer3) {
+		this.question = question;
+		this.answer = answer;
+		wrongAnswers[0] = wrongAnswer1;
+		wrongAnswers[1] = wrongAnswer2;
+		wrongAnswers[2] = wrongAnswer3;
+	}
 
-    public void correctAnswer(boolean correctAnswer, String userAnswer){
-        this.correctAnswer = correctAnswer;
-        this.userAnswer = userAnswer;
-    }
-    public Questions(String question, String answer, String wrongAnswer1)
-    {
-        this.question = question;
-        this.answer = answer;
-        this.userAnswer = wrongAnswer1;
-    }
+	public void correctAnswer(boolean correctAnswer, String userAnswer) {
+		this.correctAnswer = correctAnswer;
+		this.userAnswer = userAnswer;
+	}
 
-    public String getUserAnswer() {
-        return userAnswer;
-    }
+	public Questions(String question, String answer, String wrongAnswer1) {
+		this.question = question;
+		this.answer = answer;
+		this.userAnswer = wrongAnswer1;
+	}
 
-    public boolean getCorrectAnswer(){
-        return correctAnswer;
-    }
+	public String getUserAnswer() {
+		return userAnswer;
+	}
 
-    //getQuestions method
-    //setQuestions method
+	public boolean getCorrectAnswer() {
+		return correctAnswer;
+	}
 
-    public Questions(){}
+	// getQuestions method
+	// setQuestions method
 
-    public String getQuestion() {
-        return question ;
-    }
+	public Questions() {
+	}
 
-    public String [] getWrongAnswers()
-    {
-        return wrongAnswers;
-    }
-    public void setQuestion(String question) {
-        this.question = question;
-    }
+	public String getQuestion() {
+		return question;
+	}
 
-    public String getAnswer() {
-        return answer;
-    }
+	public String[] getWrongAnswers() {
+		return wrongAnswers;
+	}
 
-    public void setAnswer(String answer) {
-        this.answer = answer;
-    }
+	public void setQuestion(String question) {
+		this.question = question;
+	}
 
-    public String toString() {
-        return "Questions: " +
-                question + "\n" + "Correct answer: " + answer + "\nWrong answer " + wrongAnswers[0] + " " + wrongAnswers[1] + " " + wrongAnswers[2];
+	public String getAnswer() {
+		return answer;
+	}
 
-    }
+	public void setAnswer(String answer) {
+		this.answer = answer;
+	}
+
+	public String toString() {
+		return "Questions: " + question + "\n" + "Correct answer: " + answer + "\nWrong answer " + wrongAnswers[0] + " "
+				+ wrongAnswers[1] + " " + wrongAnswers[2];
+
+	}
 }
