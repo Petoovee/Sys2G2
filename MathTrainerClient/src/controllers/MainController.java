@@ -52,10 +52,10 @@ public class MainController {
 			e.printStackTrace();
 		}
 
-		mainWindow.setOnCloseRequest(e -> {// Denna metod bestÃ¤mmer vad som hÃ¤nder nÃ¤r man trycker pÃ¥ krysset i
-											// fÃ¶nstret.
-			e.consume(); // Detta stoppar close-eventen (consume) och skickar istÃ¤llet programmet till
-			closeProgram(); // metoden closeProgram() som finns lÃ¤ngre ner. Den skapar en confirmation
+		mainWindow.setOnCloseRequest(e -> {// Denna metod bestämmer vad som händer när man trycker på krysset i
+											// fönstret.
+			e.consume(); // Detta stoppar close-eventen (consume) och skickar istället programmet till
+			closeProgram(); // metoden closeProgram() som finns längre ner. Den skapar en confirmation
 							// ruta.
 		});
 		this.mainWindow.setTitle("MathTrainer");
@@ -124,7 +124,7 @@ public class MainController {
 	 */
 	public void closeProgram() {
 		boolean answer = popUpWindow(Alert.AlertType.CONFIRMATION, "Avsluta?",
-				"Ã„r du sÃ¤ker pÃ¥ att du vill avsluta MathTrainer?");
+				"Är du säker på att du vill avsluta MathTrainer?");
 		if (answer) {
 			mainWindow.close();
 		}
@@ -164,9 +164,9 @@ public class MainController {
 	 */
 	public void logIn(String username, String password) {
 		currentUser = new User(username, password);
-		if (username.isBlank() || password.isBlank()) {
-			popUpWindow(Alert.AlertType.ERROR, "Felaktiga anvÃ¤ndaruppgifter",
-					"Du mÃ¥ste fylla i bÃ¥de anvÃ¤ndarnamn och lÃ¶senord");
+		if (username == "" || password == "") {
+			popUpWindow(Alert.AlertType.ERROR, "Felaktiga användaruppgifter",
+					"Du måste fylla i både användarnamn och lösenord");
 		} else {
 			Object returnValue = networkController.sendRequest("Login", currentUser);
 			if (returnValue instanceof User) {

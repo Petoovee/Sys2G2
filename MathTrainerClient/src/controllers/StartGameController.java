@@ -23,12 +23,12 @@ public class StartGameController extends MainMenuControllerParent implements Ini
 		gameInformationLabel.setWrapText(true);
 		if (object instanceof User) {
 			User user = (User) object;
-			// TODO: NÃ¥n metod fÃ¶r att hÃ¤mta ett score frÃ¥n user (som bÃ¶r lagras vid
+			// TODO: Nån metod för att hämta ett score från user (som bör lagras vid
 			// avklarat spel).
 			// Detta skrivs sen till bestScoreLabel.
 			bestScoreLabel.setText("Inget resultat registrerat");
 		} else {
-			bestScoreLabel.setText("Logga in fÃ¶r att se ditt resultat!");
+			bestScoreLabel.setText("Logga in för att se ditt resultat!");
 			bestScoreLabel.setTextFill(Color.web("#ff0000", 0.8));
 		}
 	}

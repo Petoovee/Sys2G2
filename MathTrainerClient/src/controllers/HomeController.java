@@ -59,13 +59,13 @@ public class HomeController extends MainMenuControllerParent implements Initiali
 	public void setInitialValues(Object object) {
 		if (object != null) {
 			user = (User) object;
-			welcomeLabel.setText("VÃ¤lkommen " + user.getUserName());
+			welcomeLabel.setText("Välkommen " + user.getUserName());
 			results = user.getResults();
 			userInfoLabel.setText("Ã…rskurs " + user.getYear() + "\n" + user.getSchool() + "\n");
 
 			setProgress();
 		} else {
-			welcomeLabel.setText("VÃ¤lkommen ");
+			welcomeLabel.setText("Välkommen ");
 			userInfoLabel.setText("");
 			resetProgress();
 		}

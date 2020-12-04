@@ -152,7 +152,7 @@ public class MServer {
 							oos.writeObject(user);
 						} else {
 							System.out.println("Login failed");
-							oos.writeObject("Inloggning misslyckad: Felaktigt anv√§ndarnamn eller l√∂senord!");
+							oos.writeObject("Inloggning misslyckad: Felaktigt anv‰ndarnamn eller lˆsenord!");
 						}
 					} else if (input.equals("NewUser")) {
 
@@ -172,7 +172,7 @@ public class MServer {
 							// Sending the user back to the client
 							oos.writeObject(user);
 						} else {
-							oos.writeObject("Inloggning misslyckad: Anv√§ndarnamnet √§r upptaget");
+							oos.writeObject("Inloggning misslyckad: Anv‰ndarnamnet ‰r upptaget");
 						}
 					} else if (input.equals("Questions")) {
 						System.out.println("Checking questions");
@@ -195,7 +195,7 @@ public class MServer {
 							System.out.println("Writing user's results " + user);
 							oos.writeObject(user);
 						} else {
-							oos.writeUTF("Dessv√§rre hittar inte anv√§ndaren");
+							oos.writeUTF("Dessv‰rre hittar inte anv‰ndaren");
 						}
 					}
 				} catch (IOException e) {

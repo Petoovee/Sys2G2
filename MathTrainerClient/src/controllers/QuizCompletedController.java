@@ -62,13 +62,13 @@ public class QuizCompletedController extends SceneControllerParent implements In
 			feedbackLabel.setText("Wow! Full pott!!");
 			imageTrophy.setVisible(true);
 		} else if (score >= questions.length * 0.75) {
-			feedbackLabel.setText("Bra jobbat! Du kanske till och med kan fÃ¥ alla rÃ¤tt nÃ¤sta gÃ¥ng?");
+			feedbackLabel.setText("Bra jobbat! Du kanske till och med kan få alla rätt nästa gång?");
 		} else if (score >= (questions.length * 0.5)) {
-			feedbackLabel.setText("Snyggt! Du Ã¤r godkÃ¤nd! Med lite Ã¶vning kanske du kan nÃ¥ Ã¤nnu hÃ¶gre?");
+			feedbackLabel.setText("Snyggt! Du är godkänd! Med lite övning kanske du kan nå ännu högre?");
 		} else if (score >= (questions.length * 0.25)) {
-			feedbackLabel.setText("NÃ¤ra godkÃ¤ntgrÃ¤nsen nu. Lite mer Ã¶vning sÃ¥ sitter det nog. KÃ¤mpa pÃ¥!");
+			feedbackLabel.setText("Nära godkäntgränsen nu. Lite mer övning så sitter det nog. Kämpa på!");
 		} else {
-			feedbackLabel.setText("AjdÃ¥, det gick ju sÃ¥dÃ¤r. Lite mer studier behÃ¶vs nog innan nÃ¤sta fÃ¶rsÃ¶k.");
+			feedbackLabel.setText("Ajdå, det gick ju sådär. Lite mer studier behövs nog innan nästa försök.");
 		}
 	}
 

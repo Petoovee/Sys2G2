@@ -18,7 +18,7 @@ import javafx.util.Duration;
 import java.util.Random;
 import java.util.Scanner;
 
-//Denna Ã¤r kopplad till GameScene
+//Denna är kopplad till GameScene
 
 /**
  * Class GameController that extends SceneControllerParent that handles the
@@ -69,7 +69,7 @@ public class GameController extends SceneControllerParent implements InitializeS
 	 */
 	public void quitGame(ActionEvent actionEvent) {
 		boolean answer = mainController.popUpWindow(Alert.AlertType.CONFIRMATION, "Avsluta?",
-				"Ã„r du sÃ¤ker pÃ¥ att du vill avsluta, dina svar sparas inte");
+				"Är du säker på att du vill avsluta, dina svar sparas inte");
 		if (answer) {
 			mainController.setScene(ScenesEnum.Exercises);
 			startQuiz.setDisable(false);
@@ -163,7 +163,7 @@ public class GameController extends SceneControllerParent implements InitializeS
 			public void run() {
 				Alert alert = new Alert(Alert.AlertType.INFORMATION);
 				alert.setTitle("Gameover");
-				alert.setHeaderText("Tiden Ã¤r ute, men fÃ¶rsÃ¶k en gÃ¥ng till!");
+				alert.setHeaderText("Tiden är ute, men försök en gång till!");
 				alert.showAndWait();
 			}
 		});

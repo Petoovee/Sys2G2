@@ -30,11 +30,11 @@ public class LogInController extends SceneControllerParent implements Initialize
 	 * @param actionEvent
 	 */
 	public void skipLogInClicked(ActionEvent actionEvent) {
-		boolean answer = mainController.popUpWindow(Alert.AlertType.CONFIRMATION, "Forts√§tt utan att logga in?",
-				"Om du inte loggar in eller skapar en anv√§ndare kommer ingenting att sparas. "
-						+ "√Ñr du s√§ker p√• att du vill forts√§tta utan att logga in?");
+		boolean answer = mainController.popUpWindow(Alert.AlertType.CONFIRMATION, "Forts‰tt utan att logga in?",
+				"Om du inte loggar in eller skapar en anv‰ndare kommer ingenting att sparas. "
+						+ "ƒr du s‰ker pÂ att du vill forts‰tta utan att logga in?");
 		if (answer) {
-			// ToDo: Kod f√∂r att spela som g√§st
+			// ToDo: Kod fˆr att spela som g‰st
 			mainController.skipLogin();
 		}
 	}

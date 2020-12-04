@@ -13,7 +13,7 @@ public class SettingsController extends MainMenuControllerParent implements Init
 	public void setInitialValues(Object object) {
 		if (object != null) {
 			user = (User) object;
-			userInfoLabel.setText("AnvÃ¤ndarnamn: " + user.getUserName() + "\n" + "Ã…rskurs: " + user.getYear() + "\n"
+			userInfoLabel.setText("Användarnamn: " + user.getUserName() + "\n" + "Ã…rskurs: " + user.getYear() + "\n"
 					+ "Skola: " + user.getSchool() + "\n");
 		} else {
 			userInfoLabel.setText("");
@@ -22,5 +22,5 @@ public class SettingsController extends MainMenuControllerParent implements Init
 
 	// userInfoLabel.setText("Ã…rskurs " + user.getYear() + "\n" + user.getSchool()
 	// + "\n");
-	// ToDO: Metoder fÃ¶r att hantera de actions anvÃ¤ndaren kan gÃ¶ra i settings.
+	// ToDO: Metoder för att hantera de actions användaren kan göra i settings.
 }

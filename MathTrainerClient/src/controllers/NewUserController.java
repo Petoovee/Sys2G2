@@ -47,17 +47,17 @@ public class NewUserController extends SceneControllerParent implements Initiali
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(username.getText());
 		if (username.getText().length() < 5 || username.getText().length() > 20) {
-			mainController.popUpWindow(Alert.AlertType.ERROR, "AnvÃ¤ndarnamnet Ã¤r fÃ¶r kort eller lÃ¥ngt",
-					"AnvÃ¤ndarnamnet mÃ¥ste vara mellan 5 och 20 tecken lÃ¥ngt");
+			mainController.popUpWindow(Alert.AlertType.ERROR, "Användarnamnet är för kort eller långt",
+					"Användarnamnet måste vara mellan 5 och 20 tecken långt");
 		} else if (!matcher.matches()) {
-			mainController.popUpWindow(Alert.AlertType.ERROR, "Specialtecken Ã¤r ej tillÃ¥tna",
-					"AnvÃ¤ndarnamnet fÃ¥r ej innehÃ¥lla specialtecken, som t ex !, &, *");
+			mainController.popUpWindow(Alert.AlertType.ERROR, "Specialtecken är ej tillåtna",
+					"Användarnamnet får ej innehålla specialtecken, som t ex !, &, *");
 		} else if (!password.getText().equals(passwordRepeat.getText())) {
-			mainController.popUpWindow(Alert.AlertType.ERROR, "Felaktigt lÃ¶senord",
-					"LÃ¶senorden du angav stÃ¤mmer ej Ã¶verens med varandra");
+			mainController.popUpWindow(Alert.AlertType.ERROR, "Felaktigt lösenord",
+					"Lösenorden du angav stämmer ej överens med varandra");
 		} else if (password.getText().length() < 6) {
-			mainController.popUpWindow(Alert.AlertType.ERROR, "LÃ¶senordet Ã¤r fÃ¶r kort",
-					"LÃ¶senordet mÃ¥ste vara minst 6 tecken lÃ¥ngt");
+			mainController.popUpWindow(Alert.AlertType.ERROR, "Lösenordet är för kort",
+					"Lösenordet måste vara minst 6 tecken långt");
 		} else {
 			mainController.newUser(username.getText(), password.getText(), city.getText(), school.getText(),
 					year.getValue());
