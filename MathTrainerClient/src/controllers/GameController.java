@@ -180,27 +180,47 @@ public class GameController extends SceneControllerParent implements InitializeS
 			field.setStyle("-fx-background-color: PALEVIOLETRED;");
 		}
 	}
+	
+	private boolean checkValidity(TextField field) {
+		try {
+			Double.parseDouble(field.getText());
+		} catch (Exception e) {
+			answerColor(field, false);
+			return false;			
+		}
+		return true;
+	}
 
-	public void CheckAnswer() {
-		sum = numb1 + numb2;
-		sum1 = numb3 - numb4;
-		sum2 = numb5 * numb6;
-		sum3 = numb7 / (double) numb8;
+	public void CheckAnswer() {		
+		int answer, answer1, answer2 = 9999;
+		double answer3 = 9999;
 
-		// Fetch answers
-		int answer = Integer.parseInt(sumPlus.getText());
-		int answer1 = Integer.parseInt(sumMinus.getText());
-		int answer2 = Integer.parseInt(sumMulti.getText());
-		double answer3 = Double.parseDouble(sumDiv.getText());
-
-		// Round division answers to two decimals
-		sum3 = Math.round(sum3 * 100.0) / 100.0;
-		answer3 = Math.round(answer3 * 100.0) / 100.0;
-
-		answerColor(sumPlus, (answer == sum));
-		answerColor(sumMinus, (answer1 == sum1));
-		answerColor(sumMulti, (answer2 == sum2));
-		answerColor(sumDiv, (Double.compare(answer3, sum3) == 0)); // Cannot directly compare two doubles.
+		
+		if(checkValidity(sumPlus)) {
+			sum = numb1 + numb2;
+			answer = Integer.parseInt(sumPlus.getText());
+			answerColor(sumPlus, (answer == sum));
+		}
+		
+		if(checkValidity(sumMinus)) {			
+			sum1 = numb3 - numb4;
+			answer1 = Integer.parseInt(sumMinus.getText());
+			answerColor(sumMinus, (answer1 == sum1));
+		}
+		
+		if(checkValidity(sumMulti)) {
+			sum2 = numb5 * numb6;
+			answer2 = Integer.parseInt(sumMulti.getText());
+			answerColor(sumMulti, (answer2 == sum2));
+		}
+		
+		if(checkValidity(sumDiv)) {
+			sum3 = numb7 / (double) numb8;
+			sum3 = Math.round(sum3 * 100.0) / 100.0; // Round division answers to two decimals
+			answer3 = Math.round(answer3 * 100.0) / 100.0;
+			answer3 = Double.parseDouble(sumDiv.getText());
+			answerColor(sumDiv, (Double.compare(answer3, sum3) == 0)); // Cannot directly compare two doubles.			
+		}
 
 		timeline.stop();
 		answerBtn.setDisable(true);
