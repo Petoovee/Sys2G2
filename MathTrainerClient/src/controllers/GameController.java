@@ -71,9 +71,7 @@ public class GameController extends SceneControllerParent implements InitializeS
 		boolean answer = mainController.popUpWindow(Alert.AlertType.CONFIRMATION, "Avsluta?",
 				"Är du säker på att du vill avsluta, dina svar sparas inte");
 		if (answer) {
-			mainController.setScene(ScenesEnum.Exercises);
-			startQuiz.setDisable(false);
-			timeline.stop();
+			resetGame();
 		}
 	}
 
@@ -82,6 +80,23 @@ public class GameController extends SceneControllerParent implements InitializeS
 
 	}
 
+	public void resetGame() {
+		mainController.setScene(ScenesEnum.Exercises);
+		startQuiz.setDisable(false);
+		timeline.stop();
+		
+		// Reset labels
+		plusLeftLabel.setText("?");
+		plusRightLabel.setText("?");
+		minusLeftLabel.setText("?");
+		minusRightLabel.setText("?");
+		additionLeftLabel.setText("?");
+		additionRightLabel.setText("?");
+		devidedLeftLabel.setText("?");
+		devidedRightLabel.setText("?");
+		countdownLabel.setText(STARTTIME.toString());
+	}
+	
 	/**
 	 * This method starts the game, and adds all the random values and starts the
 	 * timer.
