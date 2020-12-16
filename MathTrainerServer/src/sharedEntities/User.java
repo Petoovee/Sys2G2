@@ -94,4 +94,11 @@ public class User implements Serializable {
 		return "Accessing User {" + "name = '" + userName + '\'' + ", password = " + password + '}';
 	}
 
+	public void changeSetting(String username, String password, String city, String school, Object year) {
+		this.userName = username;
+		this.password = password;
+		this.town = city;
+		this.school = school;
+		this.year = Integer.parseInt(year.toString());
+	}
 }

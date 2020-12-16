@@ -154,6 +154,13 @@ public class MainController {
 		}
 	}
 
+	public void changeUser(String username, String password, String city, String school, Object year) {
+		currentUser.changeSetting(username, password, city, school, year);
+		
+		Object returnValue = networkController.sendRequest("ChangeSetting", currentUser);
+		System.out.println("settings resultat:");
+	}	
+	
 	/**
 	 * Log-in credentials are sent to the server. The user is either logged in, or
 	 * an error message is shown.

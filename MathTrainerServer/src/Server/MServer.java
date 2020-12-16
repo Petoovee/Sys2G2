@@ -196,6 +196,15 @@ public class MServer {
 							oos.writeObject(user);
 						} else {
 							oos.writeUTF("Dessvärre hittar inte användaren");
+						} 
+					} else if (input.equals("ChangeSetting")) {
+						User user = (User) ois.readObject();
+						user = changeUserSetting(user);
+						if (user != null) {
+							System.out.println("Writing user's setting " + user);
+							oos.writeObject(user);
+						} else {
+							oos.writeUTF("Dessvärre hittar inte användaren");
 						}
 					}
 				} catch (IOException e) {
@@ -244,6 +253,22 @@ public class MServer {
 			return user;
 		}
 
+		private User changeUserSetting(User receivedUser) {
+			User user = null;
+			String username = receivedUser.getUserName();
+			System.out.println(usersList.toString());
+			for (User u : usersList) {
+				System.out.println(usersList.toString());
+				if (username.equals(u.getUserName())) {
+					user = receivedUser;
+					user.setResults(receivedUser.getResults());
+					usersList.set(usersList.indexOf(u), user);
+				}
+			}
+			System.out.println(usersList.toString());
+			return user;
+		}
+		
 		/**
 		 * Checking if the user is in the collection
 		 * 
