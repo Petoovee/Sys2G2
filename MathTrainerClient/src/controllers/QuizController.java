@@ -59,18 +59,16 @@ public class QuizController extends SceneControllerParent implements InitializeS
 	 * @param actionEvent The button action when user clicks previousQuestionButton.
 	 */
 	public void previousQuestion(ActionEvent actionEvent) {
-
 		updateLabels(false);
 		if (questionNumber == 0) {
-
 			previousQuestionButton.setVisible(false);
 		}
 
 		if (questionNumber == questions.length - 2) {
-
 			nextQuestionButton.setVisible(true);
 			submitResultsButton.setVisible(false);
 		}
+		updateAnsweredValues();
 	}
 
 	/**
@@ -81,10 +79,10 @@ public class QuizController extends SceneControllerParent implements InitializeS
 	 *                     so that the label can be updated.
 	 */
 	public void updateLabels(boolean nextQuestion) {
-
 		if (nextQuestion) {
 			questionNumber++;
 		} else {
+			checkAnswer((questionNumber));
 			questionNumber--;
 		}
 		LinkedList<String> answerArray = new LinkedList<String>();
@@ -137,11 +135,11 @@ public class QuizController extends SceneControllerParent implements InitializeS
 
 		checkAnswer((questionNumber));
 		if (questionNumber == questions.length - 2) {
-
 			nextQuestionButton.setVisible(false);
 			submitResultsButton.setVisible(true);
 		}
 		updateLabels(true);
+		updateAnsweredValues();
 	}
 
 	public Questions[] getQuestions() {
@@ -183,5 +181,24 @@ public class QuizController extends SceneControllerParent implements InitializeS
 		questionLabel.setWrapText(true);
 		previousQuestionButton.setVisible(false);
 		radioButtonOne.setSelected(true);
+	}
+	
+	/**
+	 * This gets called to remember users previous or forward answers.
+	 */
+	private void updateAnsweredValues() {
+		if(questions[questionNumber].getUserAnswer() != null) {
+			if(radioButtonOne.getText() == questions[questionNumber].getUserAnswer()) {
+				radioButtonOne.setSelected(true);
+			} else if(radioButtonTwo.getText() == questions[questionNumber].getUserAnswer()){
+				radioButtonTwo.setSelected(true);
+			} else if(radioButtonThree.getText() == questions[questionNumber].getUserAnswer()){
+				radioButtonThree.setSelected(true);
+			} else if(radioButtonFour.getText() == questions[questionNumber].getUserAnswer()){
+				radioButtonFour.setSelected(true);
+			}
+		} else {
+			radioButtonOne.setSelected(true);
+		}
 	}
 }
