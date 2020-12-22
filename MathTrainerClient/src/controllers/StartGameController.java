@@ -35,5 +35,6 @@ public class StartGameController extends MainMenuControllerParent implements Ini
 
 	public void startGameClicked(ActionEvent actionEvent) {
 		mainController.setScene(ScenesEnum.Game);
+		mainController.setInitialValueOfScene(null);
 	}
 }

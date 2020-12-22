@@ -155,7 +155,6 @@ public class MServer {
 							oos.writeObject("Inloggning misslyckad: Felaktigt användarnamn eller lösenord!");
 						}
 					} else if (input.equals("NewUser")) {
-
 						User user = (User) ois.readObject();
 						debugPrint("Username: " + user.getUserName());
 						if (isUserNew(user)) {

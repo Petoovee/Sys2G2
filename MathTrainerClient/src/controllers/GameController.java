@@ -60,7 +60,7 @@ public class GameController extends SceneControllerParent implements InitializeS
 	private Integer timeSeconds = STARTTIME;
 
 	public GameController() {
-
+		
 	}
 
 	/**
@@ -75,9 +75,10 @@ public class GameController extends SceneControllerParent implements InitializeS
 		}
 	}
 
+
 	@Override
 	public void setInitialValues(Object object) {
-
+		answerBtn.setDisable(true);
 	}
 
 	public void resetGame() {
@@ -155,7 +156,7 @@ public class GameController extends SceneControllerParent implements InitializeS
 		timeline = new Timeline();
 		timeline.setCycleCount(Timeline.INDEFINITE);
 		timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(1), new EventHandler() {
-
+			
 			@Override
 			public void handle(Event event) {
 				timeSeconds--;
@@ -163,7 +164,6 @@ public class GameController extends SceneControllerParent implements InitializeS
 				if (timeSeconds <= 0) {
 					timeline.stop();
 					CheckAnswer();
-
 				}
 			}
 		}));
