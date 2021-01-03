@@ -1,0 +1,170 @@
+.Knapp{
+
+
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient( to right bottom, #58c5e2, #506df3);
+    -fx-font-size: 12px;
+    -fx-font-family: "Helvetica";
+    -fx-effect: dropshadow( gaussian ,rgba(0,50,25,.25), 10px, 0.1 ,0, 3 );
+}
+
+
+
+.YellowOWLD{
+-fx-background-color: linear-gradient(from 0% 2% to 125% 115%, #FFFF5F  0%,  #FFB200  100%);
+    -fx-text-fill: #FFFFFF; /*Textfärg på alla knappar */
+    -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: Bold;
+     -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+}
+
+
+
+.YellowOWLD:hover{
+
+-fx-background-color:#FFFFFF;
+    -fx-text-fill:linear-gradient(from 0% 2% to 125% 115%, #FFFF5F  0%,  #FFB200  100%); /*Textfärg på alla knappar */
+    -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: Bold;
+    -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+}
+
+.RedOWL{
+-fx-background-color: linear-gradient(from 0% 2% to 125% 115%, #FF5F5F  0%,  #EF4136  100%);
+    -fx-text-fill: #FFFFFF; /*Textfärg på alla knappar */
+    -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: Bold;
+     -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+}
+
+
+
+.RedOWL:hover{
+
+-fx-background-color:#FFFFFF;
+    -fx-text-fill:linear-gradient(from 0% 2% to 125% 115%, #FF5F5F  0%,  #EF4136  100%);/*Textfärg på alla knappar */
+    -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: Bold;
+    -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+}
+
+.BlueOWL{
+-fx-background-color: linear-gradient(from 0% 2% to 125% 115%, #5F90FF  0%,  #2D65C6  100%);
+    -fx-text-fill: #FFFFFF; /*Textfärg på alla knappar */
+    -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: Bold;
+     -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+}
+
+
+
+.BlueOWL:hover{
+
+-fx-background-color:#FFFFFF;
+    -fx-text-fill:linear-gradient(from 0% 2% to 125% 115%, #5F90FF  0%,  #2D65C6  100%);/*Textfärg på alla knappar */
+    -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: Bold;
+    -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+}
+
+.GreenOWL{
+-fx-background-color: linear-gradient(from 0% 2% to 125% 115%,  #76F7C8  0%, #2B9F84 100%);
+    -fx-text-fill: #FFFFFF; /*Textfärg på alla knappar */
+    -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: Bold;
+     -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+}
+
+
+
+.GreenOWL:hover{
+
+-fx-background-color:#FFFFFF;
+    -fx-text-fill:linear-gradient(from 0% 2% to 125% 115%,  #76F7C8  0%, #2B9F84 100%); /*Textfärg på alla knappar */
+    -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: Bold;
+    -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+}
+
+
+#Anchor{
+
+-fx-background-color: linear-gradient(from 0% 2% to 125% 115%, #252B4A 55%, #31395F 100%)
+}
+
+
+
+#SplitPane{
+-fx-background-color: linear-gradient(from 0% 2% to 125% 115%, #252B4A 55%, #31395F 100%)
+
+}
+
+
+#textinput {
+     -fx-text-fill: -fx-text-inner-color;
+     -fx-highlight-fill: derive(-fx-control-inner-background,-20%);
+     -fx-highlight-text-fill: -fx-text-inner-color;
+     -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+     -fx-background-color: linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border),
+         linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+     -fx-background-insets: 0, 1;
+     -fx-background-radius: 3, 2;
+     -fx-cursor: text;
+     -fx-padding: 0.333333em 0.583em 0.333333em 0.583em; /* 4 7 4 7 */
+       -fx-background-color: #cbcbcb; /*Bakgrundsfärg på alla textfields*/
+
+ }
+ .textinput:focused {
+     -fx-highlight-fill: -fx-accent;
+     -fx-highlight-text-fill: white;
+     -fx-background-color:
+         -fx-focus-color,
+         -fx-control-inner-background,
+         -fx-faint-focus-color,
+         linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+     -fx-background-insets: -0.2, 1, -1.4, 3;
+     -fx-background-radius: 3, 2, 4, 0;
+     -fx-prompt-text-fill: transparent;
+ }
+
+
+#ButtonMenu{
+
+    -fx-text-fill: white;
+        -fx-background-color: #f0f3ff;
+        -fx-font-size: 12px;
+        -fx-font-family: "Helvetica";
+        -fx-effect: dropshadow( gaussian ,rgba(0,50,25,.25), 10px, 0.1 ,0, 3 );
+}
+
+#Connected{
+
+    -fx-text-fill: #02B87E;
+    -fx-font-family: "Helvetica";
+
+}
+ //

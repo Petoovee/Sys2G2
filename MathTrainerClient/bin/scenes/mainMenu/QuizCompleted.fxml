@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="927.0" stylesheets="@../../entity/MathTrainerStylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.QuizCompletedController">
+    <children>
+        <SplitPane prefHeight="577.0" prefWidth="927.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="473.0" prefWidth="646.0" styleClass="Anchor" stylesheets="@../../entity/MathTrainerStylesheet.css">
+                    <children>
+                        <AnchorPane layoutY="201.0" prefHeight="360.0" prefWidth="927.0" styleClass="MenuButton" stylesheets="@../../entity/MathTrainerStylesheet.css" />
+                        <Button layoutX="185.0" layoutY="24.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="568.0" styleClass="MenuButton" stylesheets="@../../entity/MathTrainerStylesheet.css" />
+                        <Button layoutX="186.0" layoutY="122.0" mnemonicParsing="false" prefHeight="412.0" prefWidth="568.0" styleClass="MenuButton" stylesheets="@../../entity/MathTrainerStylesheet.css" />
+                        <Label layoutX="346.0" layoutY="28.0" prefHeight="74.0" prefWidth="401.0" styleClass="labelBlack" text="Resultat">
+                            <font>
+                                <Font size="61.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="510.0" layoutY="492.0" mnemonicParsing="false" onAction="#continueMenu" prefHeight="25.0" prefWidth="182.0" styleClass="ConfirmButton" text="Fortsätt" />
+                        <Region layoutY="97.0" prefHeight="253.0" prefWidth="77.0" />
+                  <Button layoutX="213.0" layoutY="149.0" mnemonicParsing="false" prefHeight="317.0" prefWidth="515.0" styleClass="MenuButton" stylesheets="@../../entity/MathTrainerStylesheet.css" />
+                  <Label layoutX="257.0" layoutY="222.0" prefHeight="44.0" prefWidth="130.0" styleClass="labelBlack" text="Du fick:">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="scoreLabel" layoutX="452.0" layoutY="222.0" prefHeight="53.0" prefWidth="149.0" styleClass="labelBlack" text="7 / 7" textAlignment="RIGHT">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="611.0" layoutY="222.0" prefHeight="44.0" prefWidth="77.0" styleClass="labelBlack" text="Rätt">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="feedbackLabel" layoutX="251.0" layoutY="302.0" prefHeight="148.0" prefWidth="433.0" styleClass="labelBlack" text="Bra jobbat!" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imageTrophy" fitHeight="148.0" fitWidth="173.0" layoutX="556.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../images/diamondtrophy-cartoon-award-drawing-prize-animation-medal-cdr-blue-png-clipart.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="251.0" layoutY="492.0" mnemonicParsing="false" onAction="#showAnswers" prefHeight="25.0" prefWidth="182.0" styleClass="buttonReal" text="Se svar" />
+                    </children></AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</VBox>
