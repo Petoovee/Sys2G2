@@ -96,6 +96,7 @@ public class MServer {
 
     }
 
+
     public static void main(String[] args) throws FileNotFoundException {
         new MServer(7890);
     }
@@ -110,7 +111,6 @@ public class MServer {
      * @since 2020.04.29
      */
     class ClientHandler extends Thread {
-
         private Socket server;
         private ObjectInputStream ois;
         private ObjectOutputStream oos;
@@ -145,7 +145,7 @@ public class MServer {
                             oos.writeObject(user);
                         } else {
                             System.out.println("Login failed");
-                            oos.writeObject("Inloggning misslyckad: Felaktigt användarnamn eller lösenord!");
+                            oos.writeObject("Inloggning misslyckad: Felaktigt anvÃ¤ndarnamn eller lÃ¶senord!");
                         }
                     } else if (input.equals("NewUser")) {
 
@@ -165,7 +165,7 @@ public class MServer {
                             //Sending the user back to the client
                             oos.writeObject(incominguser);
                         } else {
-                            oos.writeObject("Inloggning misslyckad: Anv�ndarnamnet �r upptaget");
+                            oos.writeObject("Inloggning misslyckad: Användarnamnet är upptaget");
                         }
                     } else if (input.equals("Questions")) {
                     	String answerTypeOfQuestion = (String) ois.readObject();
@@ -185,7 +185,7 @@ public class MServer {
 		                        }	                       
 	                    } else {                    	
 	                    	int year = user.getYear();
-	                    	System.out.println("�rkurs: " + year);
+	                    	System.out.println("Årkurs: " + year);
 	                    	switch(year) {
 	                    	case 6:
 	                    		course = new Sixth();
@@ -251,7 +251,7 @@ public class MServer {
                             oos.writeObject(user);
                         }
                         else {
-                            oos.writeUTF("Dessv�rre hittar inte anv�ndaren");
+                            oos.writeUTF("Dessvärre hittar inte användaren");
                         }
                     }
                 } catch (IOException e) {
