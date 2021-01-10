@@ -1,0 +1,161 @@
+/*
+Stylesheet för hela applikationen. Denna läggs till i alla scener i Scenebuilder. För att se olika färger osv så
+googla bara på typ CSS colors så får man fram färgkoder. T ex #000000 är svart, #FFFFFF är vid.
+@author Niklas Hultin
+@version 1.0
+*/
+.root{
+    -fx-base: #FFFFFF; /*root är själva huvudfönstret. Denna del sätter grundfärgen, alltså bagrundsfärg i alla scener*/
+    -fx-background-color: #F7F8FD;
+
+}
+.label{
+    -fx-text-fill: #000000; /*Sätter färgen på texten i alla labels*/
+}
+.buttonReal{
+-fx-background-color: linear-gradient(from 0% 2% to 125% 115%, #515ada  0%, #efd5ff 100%);
+    -fx-text-fill: #FFFFFF; /*Textfärg på alla knappar */
+    -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: Bold;
+     -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+}
+
+.progress-bar { -fx-box-border: goldenrod; }
+
+.green-bar  { -fx-accent: green;  }
+.yellow-bar { -fx-accent: yellow; }
+.orange-bar { -fx-accent: orange; }
+.red-bar    { -fx-accent: red;    }
+
+
+.buttonReal:hover{
+
+-fx-background-color:#FFFFFF;
+    -fx-text-fill:linear-gradient(from 0% 2% to 125% 115%, #515ada  0%, #efd5ff 100%); /*Textfärg på alla knappar */
+    -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: Bold;
+    -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+}
+
+.buttonBackground{
+-fx-background-color: linear-gradient(from 0% 2% to 125% 115%, #515ada  0%, #efd5ff 100%);
+    -fx-text-fill: #FFFFFF; /*Textfärg på alla knappar */
+    -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: Bold;
+     -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+}
+
+.Avsluta{
+    -fx-background-color: linear-gradient( to right bottom, #fd1d1d, #e95a40);
+        -fx-text-fill: #FFFFFF; /*Textfärg på alla knappar */
+        -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+        -fx-font-size: 12px;
+        -fx-font-family: "Roboto";
+        -fx-font-weight: Bold;
+         -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+}
+
+.Avsluta:hover{
+
+     -fx-background-color: #FFFFFF;
+         -fx-text-fill: linear-gradient( to right bottom, #fd1d1d, #e95a40); /*Textfärg på alla knappar */
+         -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+         -fx-font-size: 12px;
+         -fx-font-family: "Roboto";
+         -fx-font-weight: Bold;
+         -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+         -fx-border-radius: 10;
+         -fx-border-width: 3;
+
+}
+
+
+.buttonNoButton{
+-fx-background-color: linear-gradient(from 0% 2% to 125% 115%, #515ada  0%, #efd5ff 100%);
+}
+
+
+.text-field{
+    -fx-background-color: #FFFFFF; /*Bakgrundsfärg på alla textfields*/
+}
+
+.Anchor{
+-fx-background-color: linear-gradient(from 0% 2% to 125% 115%, #515ada  0%, #efd5ff 100%);
+}
+
+
+
+.Label{
+
+    -fx-font-size: 35px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: Bold;
+    -fx-text-fill: #FFFFFF; /*Textfärg på alla knappar */
+
+}
+
+.labelExercise{-fx-font-size: 20px;
+                   -fx-font-family: "Roboto";
+                   -fx-font-weight: bolder;
+                   -fx-text-fill: #FFFFFF; /*Textfärg på alla knappar */}
+
+
+
+.MenuButton{
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+}
+
+.labelBlack{
+
+-fx-font-family: "Roboto";
+          -fx-font-weight: bold;
+}
+
+
+.Anchi{
+    -fx-background-color: #F4F4F4;
+}
+
+.LeftAnchi{
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+}
+
+.ButtonUserConnection{
+   -fx-background-color: #E4F7D0;
+     -fx-text-fill: #31AD01;
+     -fx-effect: dropshadow( gaussian ,rgba(0,0,0,.25), 10px, 0.1 ,0, 3 );
+}
+
+}
+
+.ConfirmButton{
+          -fx-background-color: linear-gradient(from 0% 2% to 125% 115%, #00ff17  0%, #FFFFFF 100%);
+            -fx-text-fill: #FFFFFF; /*Textfärg på alla knappar */
+            -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+            -fx-font-size: 12px;
+            -fx-font-family: "Roboto";
+            -fx-font-weight: Bold;
+            -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+}
+
+.ConfirmButton:hover{
+         -fx-background-color: #FFFFFF;
+         -fx-text-fill:  linear-gradient(from 0% 2% to 125% 115%, #00ff17  0%, #FFFFFF 100%); /*Textfärg på alla knappar */
+         -fx-background-radius: 12; /*Rundhet på hörnen på alla knappar */
+         -fx-font-size: 12px;
+         -fx-font-family: "Roboto";
+         -fx-font-weight: Bold;
+         -fx-effect: dropshadow( gaussian ,rgba(0,0,1,.25), 10px, 0.1 ,0, 3 );
+         -fx-border-radius: 10;
+         -fx-border-width: 3;
+}
