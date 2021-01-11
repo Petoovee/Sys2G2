@@ -136,7 +136,7 @@ public class MServer {
 				Course course = null;
 				try {
 					String input = ois.readUTF();
-					System.out.print("Recive in server" + input);
+					System.out.print("Recived in server" + input);
 					if (input.equals("Login")) {
 						User user = (User) ois.readObject();
 						user = isLoginSucceeded(user);
