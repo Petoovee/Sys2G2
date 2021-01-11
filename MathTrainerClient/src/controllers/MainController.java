@@ -156,7 +156,7 @@ public class MainController {
 
 	public void changeUser(String username, String password, String city, String school, Object year) {
 		currentUser.changeSetting(username, password, city, school, year);
-		
+		System.out.println("\nchange user in main controller: "+currentUser.getYear());
 		Object returnValue = networkController.sendRequest("ChangeSetting", currentUser);
 		System.out.println("settings resultat:");
 	}	

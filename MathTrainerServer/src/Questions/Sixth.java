@@ -81,11 +81,16 @@ public class Sixth extends Course {
 		String q9 = "Fem tärningar kastas och de visar sidorna: 6, 0, 4, 3, 2. Beräkna medelvärdet.";
 		String q10 = "Medelvärdet av tre tal är 5. Två av talen är 2 och 5. Vilket är det tredje talet?";
 
-		statisticQuestions = new Questions[] { new Questions(q1, "3", "1", "15", "30"),
-				new Questions(q2, "3", "6", "2", "0"), new Questions(q3, "6", "10", "3", "32"),
-				new Questions(q4, "36", "26", "10", "134"), new Questions(q5, "Kolumn", "Titel", "Rad", "Figur"),
-				new Questions(q6, "Rad", "Kolumn", "Figur", "Titel"), new Questions(q7, "6", "8", "9", "4"),
-				new Questions(q8, "12", "11", "13", "10"), new Questions(q9, "3", "15", "4", "2"),
+		statisticQuestions = new Questions[] { 
+				new Questions(q1, "3", "1", "15", "30"),
+				new Questions(q2, "3", "6", "2", "0"), 
+				new Questions(q3, "6", "10", "3", "32"),
+				new Questions(q4, "25", "36", "10", "134"), 
+				new Questions(q5, "Kolumn", "Titel", "Rad", "Figur"),
+				new Questions(q6, "Rad", "Kolumn", "Figur", "Titel"), 
+				new Questions(q7, "6", "8", "9", "4"),
+				new Questions(q8, "12", "11", "13", "10"), 
+				new Questions(q9, "3", "15", "4", "2"),
 				new Questions(q10, "8", "6", "9", "7") };
 	}
 
@@ -102,13 +107,16 @@ public class Sixth extends Course {
 		String q8 = "Den geometrisk figuren rektangel, vad liknar den i verkligheten?";
 		String q9 = "Den geometrisk figuren cirkel, vad liknar den i verkligheten?";
 		String q10 = "Den punkt linjerna möts i, där vi mäter vinkeln, kallas...";
-		geometryQuestions = new Questions[] { new Questions(q2, "28", "23", "27", "34"),
-				new Questions(q3, "17.3", "25", "15", "2"), new Questions(q4, "8", "6", "4", "6"),
-				new Questions(q5, "4", "5", "8", "7"), new Questions(q6, "0", "4", "5", "2"),
+		geometryQuestions = new Questions[] { 
+				new Questions(q1, "3", "4", "7,5", "8"),
+				new Questions(q2, "28", "23", "27", "34"),
+				new Questions(q3, "17.3", "25", "15", "2"), 
+				new Questions(q4, "8", "6", "4", "6"),
+				new Questions(q5, "4", "5", "8", "7"), 
+				new Questions(q6, "0", "4", "5", "2"),
 				new Questions(q7, "Läskburk", "Fotboll", "Dator", "Bil"),
 				new Questions(q8, "Pappersark", "Tärning", "Kartong", "Tåg"),
 				new Questions(q9, "CD-skiva", "Datorskärm", "CD-fodral", "Kruka"),
-				new Questions(q1, "3", "4", "7,5", "8"),
 				new Questions(q10, "Vinkelspets", "Mötesplats", "Vikelhake", "Vinkelpunkt") };
 	}
 
@@ -124,11 +132,16 @@ public class Sixth extends Course {
 		String q8 = "Mikaels favorittröja brukade kosta 150 kr. På rea blev den 20% billigare, då köpte han den. Hur mycket kostade den då?";
 		String q9 = "Räkna ut  20 % av 150 kr";
 		String q10 = "Vad blir 4*5*3?";
-		fourCountQuestions = new Questions[] { new Questions(q1, "587.27", "550", "480", "245"),
-				new Questions(q2, "130", "140", "230", "312"), new Questions(q3, "51", "23", "25.52", "40"),
-				new Questions(q4, "4000", "4500", "4050", "5141"), new Questions(q5, "-12", "12", "8", "10"),
-				new Questions(q6, "5", "6", "3", "7.5"), new Questions(q7, "0.2", "0.5", "0.6", "0.7"),
-				new Questions(q8, "120kr", "140kr", "100kr", "80kr"), new Questions(q9, "30kr", "50kr", "40kr", "35kr"),
+		fourCountQuestions = new Questions[] { 
+				new Questions(q1, "587,27", "550", "480", "245"),
+				new Questions(q2, "130", "140", "230", "312"), 
+				new Questions(q3, "51", "23", "25,52", "40"),
+				new Questions(q4, "4000", "4500", "4050", "5141"), 
+				new Questions(q5, "-12", "12", "8", "10"),
+				new Questions(q6, "5", "6", "3", "7,5"), 
+				new Questions(q7, "0,2", "0,5", "0,6", "0,7"),
+				new Questions(q8, "120kr", "140kr", "100kr", "80kr"), 
+				new Questions(q9, "30kr", "50kr", "40kr", "35kr"),
 				new Questions(q10, "60", "40", "70", "43"), };
 	}
 
@@ -147,11 +160,16 @@ public class Sixth extends Course {
 		String q9 = "Mikaels favorittröja brukade kosta 150 kr. På rea blev den 20% billigare, då köpte han den. Hur mycket kostade den då?";
 		String q10 = "Räkna ut  20 % av 150 kr";
 
-		randomlyQuestions = new Questions[] { new Questions(q1, "3", "1", "15", "30"),
-				new Questions(q2, "3", "6", "2", "0"), new Questions(q3, "6", "10", "3", "32"),
-				new Questions(q5, "28", "23", "27", "34"), new Questions(q6, "17.3", "25", "15", "2"),
-				new Questions(q4, "3", "4", "7,5", "8"), new Questions(q7, "5", "6", "3", "7.5"),
-				new Questions(q8, "0.2", "0.5", "0.6", "0.7"), new Questions(q9, "120kr", "140kr", "100kr", "80kr"),
+		randomlyQuestions = new Questions[] { 
+				new Questions(q1, "3", "1", "15", "30"),
+				new Questions(q2, "3", "6", "2", "0"), 
+				new Questions(q3, "6", "10", "3", "32"),
+				new Questions(q5, "28", "23", "27", "34"), 
+				new Questions(q6, "17.3", "25", "15", "2"),
+				new Questions(q4, "3", "4", "7,5", "8"), 
+				new Questions(q7, "5", "6", "3", "7.5"),
+				new Questions(q8, "0.2", "0.5", "0.6", "0.7"), 
+				new Questions(q9, "120kr", "140kr", "100kr", "80kr"),
 				new Questions(q10, "30kr", "50kr", "40kr", "35kr") };
 	}
 
