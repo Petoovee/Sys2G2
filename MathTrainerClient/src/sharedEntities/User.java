@@ -100,5 +100,6 @@ public class User implements Serializable {
 		this.town = city;
 		this.school = school;
 		this.year = Integer.parseInt(year.toString());
+		System.out.println(year.toString());
 	}
 }
